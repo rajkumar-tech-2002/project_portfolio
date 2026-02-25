@@ -143,7 +143,7 @@ const About = () => {
                   <FaLinkedin size={20} />
                 </a>
                 <a
-                  href="https://github.com/rajkumar-tech-2002"
+                  href="https://github.com/rajkumar-tech-2002/project_portfolio"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 rounded-2xl bg-slate-50 border border-slate-100 flex items-center justify-center text-slate-400 hover:text-blue-600 hover:bg-white hover:border-blue-200 transition-all duration-300 shadow-sm"

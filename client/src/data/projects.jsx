@@ -36,7 +36,7 @@ export const projects = [
         description: "High-performance portfolio website with smooth animations, advanced glassmorphism, and optimized assets.",
         image: "/assets/images/projects/portfolio.png",
         tags: ["React", "Framer Motion", "Vite", "JS"],
-        github: "#",
+        github: "https://github.com/rajkumar-tech-2002/project_portfolio",
         demo: "#"
     },
 ];
