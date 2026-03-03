@@ -55,8 +55,8 @@ const Contact = () => {
   const contactInfo = [
     { icon: <FaEnvelope className="text-blue-500" />, label: "Email", value: "rajkumaranbazhagan98@gmail.com", href: "https://mail.google.com/mail/?view=cm&fs=1&to=rajkumaranbazhagan98@gmail.com" },
     { icon: <FaLinkedin className="text-blue-600" />, label: "LinkedIn", value: "rajkumar-anbazhagan", href: "https://www.linkedin.com/in/rajkumar-anbazhagan-425519297?utm_source=share_via&utm_content=profile&utm_medium=member_android" },
-    { icon: <FaGithub className="text-slate-800" />, label: "GitHub", value: "github.com/rajkumar-tech-2002/project_portfolio", href: "https://github.com/rajkumar-tech-2002/project_portfolio" },
-    { icon: <FaMapMarkerAlt className="text-pink-500" />, label: "Location", value: "Erode, Tamil Nadu, India", href: "https://www.google.com/maps/search/Nandha+Engineering+College+Erode+Perundurai+Main+Road+Vaikkaalmedu" },
+    { icon: <FaGithub className="text-slate-800" />, label: "GitHub", value: "rajkumar-tech-2002", href: "https://github.com/rajkumar-tech-2002" },
+    { icon: <FaMapMarkerAlt className="text-pink-500" />, label: "Location", value: "Erode, India • Open to Remote" },
   ];
 
   return (

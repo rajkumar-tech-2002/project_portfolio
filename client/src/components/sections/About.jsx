@@ -51,15 +51,15 @@ const About = () => {
             <div className="mt-12 flex flex-wrap gap-4">
               <div className="py-2 px-5 rounded-full border border-blue-100 bg-blue-50/50 flex items-center gap-2">
                 <div className="w-2 h-2 rounded-full bg-blue-500" />
-                <span className="text-xs font-black tracking-widest text-blue-700">REACT</span>
+                <span className="text-xs font-black tracking-widest text-blue-700">React.js</span>
               </div>
               <div className="py-2 px-5 rounded-full border border-purple-100 bg-purple-50/50 flex items-center gap-2">
                 <div className="w-2 h-2 rounded-full bg-purple-500" />
-                <span className="text-xs font-black tracking-widest text-purple-700">TAILWIND</span>
+                <span className="text-xs font-black tracking-widest text-purple-700">Node.js</span>
               </div>
               <div className="py-2 px-5 rounded-full border border-indigo-100 bg-indigo-50/50 flex items-center gap-2">
                 <div className="w-2 h-2 rounded-full bg-indigo-500" />
-                <span className="text-xs font-black tracking-widest text-indigo-700">NODE.JS</span>
+                <span className="text-xs font-black tracking-widest text-indigo-700">MySQL</span>
               </div>
             </div>
           </motion.div>
@@ -143,7 +143,7 @@ const About = () => {
                   <FaLinkedin size={20} />
                 </a>
                 <a
-                  href="https://github.com/rajkumar-tech-2002/project_portfolio"
+                  href="https://github.com/rajkumar-tech-2002"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 rounded-2xl bg-slate-50 border border-slate-100 flex items-center justify-center text-slate-400 hover:text-blue-600 hover:bg-white hover:border-blue-200 transition-all duration-300 shadow-sm"

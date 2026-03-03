@@ -1,10 +1,14 @@
-import { motion } from "framer-motion";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import { HiArrowRight, HiDownload } from "react-icons/hi";
+import { HiArrowRight, HiDownload, HiX } from "react-icons/hi";
+
+const RESUME_PATH = "/rajkumar_anbazhzgan.pdf";
 
 const Hero = () => {
+  const [showResume, setShowResume] = useState(false);
   const [text] = useTypewriter({
-    words: ["Software Engineer", "Full Stack Developer", "Creative Problem Solver"],
+    words: ["Software Engineer", "Full Stack Developer", "Free Lancer", "Creative Problem Solver"],
     loop: true,
     typeSpeed: 60,
     deleteSpeed: 40,
@@ -115,12 +119,15 @@ const Hero = () => {
             <HiArrowRight className="group-hover:translate-x-1 transition-transform" />
           </button>
 
-          <button
-            className="btn-primary-light group w-full sm:w-auto"
+          <a
+            href="/rajkumar_anbazhzgan.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary-light group w-full sm:w-auto flex items-center justify-center gap-2"
           >
             <HiDownload className="group-hover:translate-y-1 transition-transform" />
             Download Resume
-          </button>
+          </a>
         </motion.div>
 
         {/* Social Proof/Skills Ticker style thing (optional but trending) */}
@@ -153,6 +160,62 @@ const Hero = () => {
           />
         </div>
       </motion.div>
+
+      {/* ── Resume Preview Modal ── */}
+      <AnimatePresence>
+        {showResume && (
+          <motion.div
+            key="resume-backdrop"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setShowResume(false)}
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4"
+          >
+            <motion.div
+              key="resume-modal"
+              initial={{ opacity: 0, scale: 0.92, y: 30 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.92, y: 30 }}
+              transition={{ duration: 0.3, ease: "easeOut" }}
+              onClick={(e) => e.stopPropagation()}
+              className="relative w-full max-w-4xl h-[90vh] bg-white rounded-2xl shadow-2xl flex flex-col overflow-hidden"
+            >
+              {/* Modal Header */}
+              <div className="flex items-center justify-between px-6 py-4 border-b border-slate-100 bg-white">
+                <div>
+                  <h2 className="text-lg font-bold text-slate-800">Resume Preview</h2>
+                  <p className="text-xs text-slate-400">Rajkumar Anbazhagan</p>
+                </div>
+                <div className="flex items-center gap-3">
+                  <a
+                    href={RESUME_PATH}
+                    download="rajkumar_anbazhagan.pdf"
+                    className="flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold transition-colors"
+                  >
+                    <HiDownload className="text-base" />
+                    Download
+                  </a>
+                  <button
+                    onClick={() => setShowResume(false)}
+                    className="p-2 rounded-lg hover:bg-slate-100 text-slate-500 hover:text-slate-800 transition-colors"
+                    aria-label="Close preview"
+                  >
+                    <HiX className="text-xl" />
+                  </button>
+                </div>
+              </div>
+
+              {/* PDF Viewer */}
+              <iframe
+                src={RESUME_PATH}
+                title="Rajkumar Anbazhagan Resume"
+                className="flex-1 w-full border-0"
+              />
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   );
 };

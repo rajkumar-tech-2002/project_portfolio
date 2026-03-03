@@ -34,7 +34,7 @@ export const skillCategories = [
         description: "Version control and development efficiency.",
         skills: [
             { name: "Git", icon: <FaGitAlt className="text-orange-600" /> },
-            { name: "GitHub", icon: <FaGithub className="text-white" /> },
+            { name: "GitHub", icon: <FaGithub className="text-slate-800" /> },
         ],
         span: "md:col-span-1",
         bg: "bg-slate-50",

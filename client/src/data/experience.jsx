@@ -6,7 +6,15 @@ export const experiences = [
         role: "Software Engineer",
         company: "Nandha Engineering College",
         duration: "Present",
-        description: "Working on various real-time projects including School and College ERP systems. Focusing on scalability, performance, and modern user interfaces.",
+        description: "Working on various real-time projects including School and College ERP systems and other real-time applications. Focusing on scalability, performance, and modern user interfaces.",
+        icon: <FaBuilding className="text-blue-400" />,
+        isCurrent: true
+    },
+    {
+        role: "Software Architect (Part-Time)",
+        company: "SearchFirst AI Solutions",
+        duration: "Present",
+        description: "Leading architecture design and technical strategy for scalable ERP systems. Defining system structure, ensuring performance optimization, and guiding development teams to deliver secure, high-quality real-time applications with modern user experiences.",
         icon: <FaBuilding className="text-blue-400" />,
         isCurrent: true
     },

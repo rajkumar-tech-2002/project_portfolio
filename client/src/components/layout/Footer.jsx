@@ -41,7 +41,7 @@ const Footer = () => {
               <h4 className="text-xs font-bold tracking-wider uppercase text-slate-900">Socials</h4>
               <div className="flex gap-4">
                 {[
-                  { icon: FaGithub, href: "https://github.com/rajkumar-tech-2002/project_portfolio" },
+                  { icon: FaGithub, href: "https://github.com/rajkumar-tech-2002" },
                   { icon: FaLinkedin, href: "https://www.linkedin.com/in/rajkumar-anbazhagan-425519297?utm_source=share_via&utm_content=profile&utm_medium=member_android" },
                   { icon: FaEnvelope, href: "https://mail.google.com/mail/?view=cm&fs=1&to=rajkumaranbazhagan98@gmail.com" }
                 ].map((social, index) => (
@@ -62,7 +62,7 @@ const Footer = () => {
 
         <div className="pt-8 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="text-slate-400 text-sm font-medium">
-            © {new Date().getFullYear()} RK. All rights reserved.
+            © {new Date().getFullYear()} Rajkumar Anbazhagan. All rights reserved.
           </p>
 
           <div className="flex items-center gap-2 text-slate-400 text-sm font-medium">
