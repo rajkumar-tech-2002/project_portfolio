@@ -12,7 +12,7 @@ export const experiences = [
     },
     {
         role: "Software Architect (Part-Time)",
-        company: "SearchFirst AI Solutions",
+        company: "Search First Technolgies (P) Ltd",
         duration: "Present",
         description: "Leading architecture design and technical strategy for scalable ERP systems. Defining system structure, ensuring performance optimization, and guiding development teams to deliver secure, high-quality real-time applications with modern user experiences.",
         icon: <FaBuilding className="text-blue-400" />,
