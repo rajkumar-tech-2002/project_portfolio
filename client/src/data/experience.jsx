@@ -6,7 +6,7 @@ export const experiences = [
         role: "Software Engineer",
         company: "Nandha Engineering College - Erode",
         duration: "Present",
-        description: "Working on various real-time projects including School and College ERP systems and other real-time applications. Focusing on scalability, performance, and modern user interfaces.",
+        description: "Working on various real-time projects. Focusing on scalability, performance, and modern user interfaces.",
         icon: <FaBuilding className="text-blue-400" />,
         isCurrent: true
     },
