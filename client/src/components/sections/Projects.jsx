@@ -18,10 +18,20 @@ const ProjectCard = ({ project }) => {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 via-transparent to-transparent opacity-0 group-hover/image:opacity-100 transition-opacity duration-500 flex items-end p-8">
             <div className="flex space-x-4">
-              <a href={project.github} className="w-12 h-12 glass hover:bg-white text-blue-600 rounded-2xl transition-all flex items-center justify-center shadow-lg">
+              <a 
+                href={project.github} 
+                className="w-12 h-12 glass hover:bg-white text-blue-600 rounded-2xl transition-all flex items-center justify-center shadow-lg"
+                target={project.github !== "#" ? "_blank" : undefined}
+                rel={project.github !== "#" ? "noopener noreferrer" : undefined}
+              >
                 <FaGithub size={20} />
               </a>
-              <a href={project.demo} className="w-12 h-12 glass hover:bg-white text-blue-600 rounded-2xl transition-all flex items-center justify-center shadow-lg">
+              <a 
+                href={project.demo} 
+                className="w-12 h-12 glass hover:bg-white text-blue-600 rounded-2xl transition-all flex items-center justify-center shadow-lg"
+                target={project.demo !== "#" ? "_blank" : undefined}
+                rel={project.demo !== "#" ? "noopener noreferrer" : undefined}
+              >
                 <FaExternalLinkAlt size={20} />
               </a>
             </div>
@@ -42,9 +52,14 @@ const ProjectCard = ({ project }) => {
         </div>
 
         <div className="flex items-center gap-6 pt-8 mt-auto px-2">
-          <button className="text-blue-600 text-xs font-black tracking-widest flex items-center gap-2 uppercase group-hover:translate-x-1 transition-transform">
+          <a 
+            href={project.demo}
+            target={project.demo !== "#" ? "_blank" : undefined}
+            rel={project.demo !== "#" ? "noopener noreferrer" : undefined}
+            className="text-blue-600 text-xs font-black tracking-widest flex items-center gap-2 uppercase group-hover:translate-x-1 transition-transform"
+          >
             Live Demo <HiArrowRight />
-          </button>
+          </a>
           <button className="text-slate-300 hover:text-slate-500 text-xs font-black tracking-widest flex items-center gap-2 uppercase transition-all">
             Details
           </button>

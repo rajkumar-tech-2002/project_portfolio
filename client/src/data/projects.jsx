@@ -2,10 +2,10 @@ export const projects = [
     {
         title: "College Management System (CMS)",
         description: "College Management System (CMS) developed to streamline academic, administrative, and student management processes.",
-        image: "/assets/images/projects/pr-2.jpg",
+        image: "/assets/images/projects/pr-2.png",
         tags: ["React", "MySQL", "Bootstrap", "Node.js", "Express"],
         github: "#",
-        demo: "#"
+        demo: "https://searchfirst.in/"
     },
     {
         title: "Principal Appointment System (PAS)",
@@ -34,9 +34,17 @@ export const projects = [
     {
         title: "Portfolio 2.0",
         description: "High-performance portfolio website with smooth animations, advanced glassmorphism, and optimized assets.",
-        image: "/assets/images/projects/portfolio.png",
+        image: "/assets/images/projects/portfolio.jpeg",
         tags: ["React", "Framer Motion", "Vite", "JS"],
         github: "https://github.com/rajkumar-tech-2002/project_portfolio",
         demo: "#"
     },
+    {
+        title: "EchoBot - AI Chatbot",
+        description: "AI-powered chatbot with real-time voice and text interaction, leveraging TF-IDF–based retrieval and cosine similarity to deliver accurate, document-driven, context-aware responses.",
+        image: "/assets/images/projects/echobot.png",
+        tags: ["React", "Node.js", "Express", "MySQL", "TF-IDF", "AI"],
+        github: "https://github.com/rajkumar-tech-2002/chat-bot-project/",
+        demo: "#"
+    }
 ];
