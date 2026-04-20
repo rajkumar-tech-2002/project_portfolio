@@ -120,7 +120,7 @@ const Hero = () => {
           </button>
 
           <a
-            href="/rajkumar_anbazhzgan.pdf"
+            href="/rajkumar_anbazhagan_resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary-light group w-full sm:w-auto flex items-center justify-center gap-2"
