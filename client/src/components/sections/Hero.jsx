@@ -61,7 +61,7 @@ const Hero = () => {
           <div className="absolute inset-0 bg-gradient-to-tr from-blue-600 to-indigo-600 rounded-full blur-2xl opacity-20 animate-pulse" />
           <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-white shadow-2xl overflow-hidden glass-dark">
             <img
-              src="/assets/images/rk-6.png"
+              src="/assets/images/raju.jpeg"
               alt="Rajkumar Anbazhagan"
               className="w-full h-full object-cover"
             />

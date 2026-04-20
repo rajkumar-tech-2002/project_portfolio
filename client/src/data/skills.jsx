@@ -1,4 +1,4 @@
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaDatabase, FaGitAlt, FaGithub, FaBootstrap } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaDatabase, FaPython, FaGitAlt, FaGithub, FaBootstrap } from "react-icons/fa";
 import { SiTailwindcss, SiMysql } from "react-icons/si";
 import React from 'react';
 
@@ -24,6 +24,7 @@ export const skillCategories = [
         skills: [
             { name: "MySQL", icon: <SiMysql className="text-blue-400" /> },
             { name: "SQL", icon: <FaDatabase className="text-indigo-400" /> },
+            { name: "Python", icon: <FaPython className="text-yellow-400" /> },
         ],
         span: "md:col-span-1",
         bg: "bg-purple-50/50",

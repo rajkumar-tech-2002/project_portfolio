@@ -12,7 +12,7 @@ export const experiences = [
     },
     {
         role: "Software Architect (Part-Time)",
-        company: "Search First Technolgies (P) Ltd., Erode",
+        company: "Search First Technologies (P) Ltd., Erode",
         duration: "Present",
         description: "Leading architecture design and technical strategy for scalable ERP systems. Defining system structure, ensuring performance optimization, and guiding development teams to deliver secure, high-quality real-time applications with modern user experiences.",
         icon: <FaBuilding className="text-blue-400" />,
