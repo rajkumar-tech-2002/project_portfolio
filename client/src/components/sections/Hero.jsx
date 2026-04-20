@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { HiArrowRight, HiDownload, HiX } from "react-icons/hi";
 
-const RESUME_PATH = "/rajkumar_anbazhzgan.pdf";
+const RESUME_PATH = "/rajkumar_anbazhagan_resume.pdf";
 
 const Hero = () => {
   const [showResume, setShowResume] = useState(false);
