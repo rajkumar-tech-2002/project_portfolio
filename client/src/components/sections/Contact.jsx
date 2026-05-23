@@ -116,8 +116,13 @@ const Contact = () => {
               className="sm:col-span-2 bento-card p-10 bg-blue-50/50 border-blue-100 flex flex-col md:flex-row justify-between items-center gap-10 shadow-sm"
             >
               <div className="space-y-4 text-center md:text-left">
-                <h4 className="text-3xl font-black text-slate-900">Looking for a <span className="text-gradient">freelancer</span>?</h4>
-                <p className="text-slate-500 font-medium text-sm max-w-sm">I am currently available for new projects and collaborations. Let's make something amazing together.</p>
+                <h4 className="text-3xl font-black text-slate-900">
+                  Let's build <span className="text-gradient">scalable solutions</span>.
+                </h4>
+
+                <p className="text-slate-500 font-medium text-sm max-w-sm">
+                  Open to full stack development opportunities, scalable web projects, and modern application development collaborations.
+                </p>
               </div>
               <div className="flex flex-col items-center gap-2">
                 <span className="flex h-3 w-3 relative">
@@ -174,7 +179,7 @@ const Contact = () => {
                   value={formData.message}
                   onChange={handleChange}
                   className="w-full bg-slate-50 border border-slate-100 rounded-2xl p-6 focus:outline-none focus:border-blue-600 transition-all text-lg font-medium text-slate-700 placeholder-slate-300 resize-none"
-                  placeholder="How can I help you?"
+                  placeholder="Tell me about your project or collaboration idea..."
                 ></textarea>
               </div>
 

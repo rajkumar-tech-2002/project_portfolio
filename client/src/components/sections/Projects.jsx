@@ -7,7 +7,7 @@ import { projects } from "../../data/projects.jsx";
 const ProjectCard = ({ project }) => {
   return (
     <motion.div
-      className="relative bento-card p-6 rounded-[2.5rem] group transition-all duration-500 overflow-hidden flex-shrink-0 w-[85vw] md:w-[450px]"
+      className="relative bento-card p-6 rounded-[2.5rem] group hover:-translate-y-2 transition-all duration-500 overflow-hidden flex-shrink-0 w-[85vw] md:w-[450px]"
     >
       <div className="relative z-10 h-full flex flex-col">
         <div className="aspect-[16/10] rounded-3xl overflow-hidden mb-8 relative group/image border border-slate-100 shadow-sm">
@@ -18,28 +18,44 @@ const ProjectCard = ({ project }) => {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 via-transparent to-transparent opacity-0 group-hover/image:opacity-100 transition-opacity duration-500 flex items-end p-8">
             <div className="flex space-x-4">
-              <a 
-                href={project.github} 
-                className="w-12 h-12 glass hover:bg-white text-blue-600 rounded-2xl transition-all flex items-center justify-center shadow-lg"
-                target={project.github !== "#" ? "_blank" : undefined}
-                rel={project.github !== "#" ? "noopener noreferrer" : undefined}
-              >
-                <FaGithub size={20} />
-              </a>
-              <a 
-                href={project.demo} 
-                className="w-12 h-12 glass hover:bg-white text-blue-600 rounded-2xl transition-all flex items-center justify-center shadow-lg"
-                target={project.demo !== "#" ? "_blank" : undefined}
-                rel={project.demo !== "#" ? "noopener noreferrer" : undefined}
-              >
-                <FaExternalLinkAlt size={20} />
-              </a>
+              {project.github !== "#" && (
+                <a 
+                  href={project.github} 
+                  className="w-12 h-12 glass hover:bg-white text-blue-600 rounded-2xl transition-all flex items-center justify-center shadow-lg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaGithub size={20} />
+                </a>
+              )}
+              {project.demo !== "#" && (
+                <a 
+                  href={project.demo} 
+                  className="w-12 h-12 glass hover:bg-white text-blue-600 rounded-2xl transition-all flex items-center justify-center shadow-lg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaExternalLinkAlt size={20} />
+                </a>
+              )}
             </div>
           </div>
         </div>
 
         <div className="space-y-4 px-2 flex-grow">
-          <h3 className="text-3xl font-black text-slate-900 group-hover:text-blue-600 transition-colors tracking-tight">{project.title}</h3>
+          <div className="flex justify-between items-start gap-4">
+            <div>
+              <h3 className="text-2xl font-black text-slate-900 group-hover:text-blue-600 transition-colors tracking-tight">{project.title}</h3>
+              {project.metrics && (
+                <p className="text-blue-600 text-xs font-bold mt-1 tracking-wide">{project.metrics}</p>
+              )}
+            </div>
+            {project.featured && (
+              <span className="px-3 py-1 bg-gradient-to-r from-amber-200 to-yellow-400 text-yellow-900 text-[10px] font-black tracking-wider uppercase rounded-full shadow-sm whitespace-nowrap flex-shrink-0">
+                Featured ⭐
+              </span>
+            )}
+          </div>
           <p className="text-slate-500 font-medium leading-relaxed text-sm group-hover:text-slate-700 transition-colors line-clamp-2">{project.description}</p>
 
           <div className="flex flex-wrap gap-2 pt-4">
@@ -52,17 +68,19 @@ const ProjectCard = ({ project }) => {
         </div>
 
         <div className="flex items-center gap-6 pt-8 mt-auto px-2">
-          <a 
-            href={project.demo}
-            target={project.demo !== "#" ? "_blank" : undefined}
-            rel={project.demo !== "#" ? "noopener noreferrer" : undefined}
-            className="text-blue-600 text-xs font-black tracking-widest flex items-center gap-2 uppercase group-hover:translate-x-1 transition-transform"
-          >
-            Live Demo <HiArrowRight />
-          </a>
-          <button className="text-slate-300 hover:text-slate-500 text-xs font-black tracking-widest flex items-center gap-2 uppercase transition-all">
+          {project.demo !== "#" && (
+            <a 
+              href={project.demo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 text-xs font-black tracking-widest flex items-center gap-2 uppercase group-hover:translate-x-1 transition-transform"
+            >
+              Live Demo <HiArrowRight />
+            </a>
+          )}
+          {/* <button className="text-slate-300 hover:text-slate-500 text-xs font-black tracking-widest flex items-center gap-2 uppercase transition-all">
             Details
-          </button>
+          </button> */}
         </div>
       </div>
 

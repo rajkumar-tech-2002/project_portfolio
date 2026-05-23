@@ -8,7 +8,7 @@ const RESUME_PATH = "/rajkumar_anbazhagan_resume.pdf";
 const Hero = () => {
   const [showResume, setShowResume] = useState(false);
   const [text] = useTypewriter({
-    words: ["Software Engineer", "Full Stack Developer", "Free Lancer", "Creative Problem Solver"],
+    words: ["Software Engineer", "Full Stack Developer", "Freelancer", "Creative Problem Solver"],
     loop: true,
     typeSpeed: 60,
     deleteSpeed: 40,
@@ -91,7 +91,7 @@ const Hero = () => {
           className="text-4xl md:text-7xl lg:text-8xl font-black mb-8 leading-[1.1] tracking-tighter"
         >
           Welcome to my <span className="text-gradient">portfolio</span> <br />
-          <span className="text-slate-900">Showcasing my</span> journey & expertise
+          <span className="text-slate-900">Showcasing my</span> projects & expertise
         </motion.h1>
 
         <motion.div
@@ -139,7 +139,14 @@ const Hero = () => {
         >
           <p className="text-xs uppercase tracking-[0.3em] font-bold text-slate-400 mb-8">Specialized in modern tech</p>
           <div className="flex justify-center items-center gap-12 text-slate-400/60 transition-all">
-            {["React", "Node.js", "Tailwind", "MySQL", "JavaScript"].map((tech) => (
+             {[
+              "React.js",
+              "Node.js",
+              "Express.js",
+              "MySQL",
+              "Docker",
+              "REST API"
+            ].map((tech) => (
               <span key={tech} className="text-sm font-black tracking-widest hover:text-blue-500 cursor-default">{tech}</span>
             ))}
           </div>

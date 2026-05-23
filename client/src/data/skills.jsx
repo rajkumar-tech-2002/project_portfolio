@@ -1,5 +1,22 @@
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaDatabase, FaPython, FaGitAlt, FaGithub, FaBootstrap } from "react-icons/fa";
-import { SiTailwindcss, SiMysql } from "react-icons/si";
+import {
+    FaHtml5,
+    FaCss3Alt,
+    FaJs,
+    FaReact,
+    FaGitAlt,
+    FaGithub,
+    FaBootstrap,
+    FaNodeJs,
+    FaDocker
+} from "react-icons/fa";
+
+import {
+    SiTailwindcss,
+    SiMysql,
+    SiExpress,
+    SiJsonwebtokens
+} from "react-icons/si";
+
 import React from 'react';
 
 export const skillCategories = [
@@ -19,12 +36,14 @@ export const skillCategories = [
         border: "border-blue-100"
     },
     {
-        title: "Database & Backend",
-        description: "Managing and optimizing data structures and APIs.",
+        title: "Backend & Database",
+        description: "Building scalable backend systems and APIs.",
         skills: [
-            { name: "MySQL", icon: <SiMysql className="text-blue-400" /> },
-            { name: "SQL", icon: <FaDatabase className="text-indigo-400" /> },
-            { name: "Python", icon: <FaPython className="text-yellow-400" /> },
+            { name: "Node.js", icon: <FaNodeJs className="text-green-500" /> },
+            { name: "Express.js", icon: <SiExpress className="text-gray-700" /> },
+            { name: "MySQL", icon: <SiMysql className="text-blue-500" /> },
+            { name: "REST API", icon: <FaJs className="text-yellow-500" /> },
+            { name: "JWT", icon: <SiJsonwebtokens className="text-pink-500" /> },
         ],
         span: "md:col-span-1",
         bg: "bg-purple-50/50",
@@ -32,10 +51,11 @@ export const skillCategories = [
     },
     {
         title: "Tools & Workflow",
-        description: "Version control and development efficiency.",
+        description: "Version control, deployment, and development workflow.",
         skills: [
             { name: "Git", icon: <FaGitAlt className="text-orange-600" /> },
             { name: "GitHub", icon: <FaGithub className="text-slate-800" /> },
+            { name: "Docker", icon: <FaDocker className="text-blue-500" /> },
         ],
         span: "md:col-span-1",
         bg: "bg-slate-50",
